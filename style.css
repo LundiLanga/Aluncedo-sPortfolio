@@ -368,6 +368,75 @@ h2 {
 .github:hover {
     background-color: #1b1b1b;
 }
+/* Chatbot Styles */
+#chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chatbox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#messages {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+#userInput {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#sendBtn {
+    width: 15%;
+    padding: 10px;
+    background-color: #844c8b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #6c3a73;
+}
+
+/* Chat message bubbles */
+.message {
+    margin: 5px 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #844c8b;
+    color: #fff;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #ddd;
+    color: #000;
+}
 
 
 .footer {
