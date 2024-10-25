@@ -185,7 +185,7 @@ h2 {
     color: #080808;
 }
 
-.btn {
+.sendBtn {
     display: inline-block;
     padding: 10px 30px;
     background-color: #844c8b;
@@ -404,13 +404,16 @@ h2 {
 }
 
 #sendBtn {
-    width: 15%;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 15px;
     background-color: #844c8b;
     color: #fff;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 #sendBtn:hover {
@@ -438,7 +441,7 @@ h2 {
     color: #000;
 }
 
-
+/* Footer */
 .footer {
     background-color: #080808;
     color: #fff;
