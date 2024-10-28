@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Enter') handleUserMessage();
     });
 
-   
-
     function handleUserMessage() {
         const userText = userInput.value.trim();
         if (userText) {
