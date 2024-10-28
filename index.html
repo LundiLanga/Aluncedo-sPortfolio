@@ -116,22 +116,21 @@
         </div>
     </section>
 
-    <!-- Chatbot Section -->
-    <div id="chatbot">
-      <div id="chatbox">
-        <div id="messages"></div>
-        <input type="text" id="userInput" placeholder="Ask me anything..." />
-        <button id="sendBtn">Send</button>
-      </div>
+    <div id="chat-icon" onclick="toggleChat()">
+        💬
     </div>
 
-    <ocom-chatbot sales-txt="Talk to sales" chat-txt="Chat now" close-txt="Close contact" number-txt="Call Sales" number="+27 11 319 4022" number-list="Complete list of <a href=/za/corporate/contact/global.html>local country numbers" proactive="5"><style>
-        .oda-chat-button{display:none}
-        .oda-chat-wrapper{font-family:var(--oraclesans,Oracle Sans,sans-serif) !important}
-        #oda-chat-end-conversation:focus{outline-color:#fff}
-        ocom-chatbot{position:relative;top:-20px}
-    </style></ocom-chatbot>
-    
+    <!-- Chatbot Window -->
+    <div id="chat-window">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body" id="messages"></div>
+        <input id="userInput" type="text" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

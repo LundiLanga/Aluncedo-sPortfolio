@@ -1,3 +1,8 @@
+ function toggleChat() {
+        const chatWindow = document.getElementById("chat-window");
+        chatWindow.style.display = chatWindow.style.display === "none" ? "flex" : "none";
+    }
+
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('sendBtn');
@@ -11,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') handleUserMessage();
     });
+
+   
 
     function handleUserMessage() {
         const userText = userInput.value.trim();
