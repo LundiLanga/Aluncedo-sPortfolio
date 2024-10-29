@@ -393,7 +393,7 @@ h2 {
     background-color: #703072;
 }
 
-/* Chat window styling */
+/* Chat Window Styling */
 #chat-window {
     position: fixed;
     bottom: 90px;
@@ -403,7 +403,7 @@ h2 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
     z-index: 1000;
@@ -412,7 +412,7 @@ h2 {
 .chat-header {
     background-color: #7a4181;
     color: white;
-    padding: 0.5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -423,17 +423,52 @@ h2 {
     flex: 1;
     overflow-y: auto;
     border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling User Messages (Aligned Right) */
+.user-message {
+    align-self: flex-end;
+    background-color: #844c8b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: right;
+    border: 2px solid #6a3a6e;
+}
+
+/* Styling Bot Messages (Aligned Left) */
+.bot-message {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: left;
+    border: 2px solid #ccc;
+}
+
+/* Chat Input Section */
+.chat-input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
 }
 
 input[type="text"] {
-    width: 100%;
+    flex: 1;
     padding: 10px;
     border: none;
-    border-top: 1px solid #ddd;
     outline: none;
     box-sizing: border-box;
 }
-.chat-input-container button {
+
+button#sendBtn {
     background-color: #411852;
     color: white;
     border: none;
@@ -442,7 +477,7 @@ input[type="text"] {
     transition: background-color 0.3s;
 }
 
-.chat-input-container button:hover {
+button#sendBtn:hover {
     background-color: #652b70;
 }
 

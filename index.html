@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="chatbot.js"></script>
 </head>
+
 <body>
-<!---Header Section-->
+    <!---Header Section-->
     <header class="header">
         <div class="container">
             <div class="profile">
@@ -23,19 +25,23 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="curriculumv.html" >CV</a></li>
+                    <li><a href="curriculumv.html">CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<!---About Section-->
+    <!---About Section-->
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I’m a passionate Software Developer with experience in virtualization and cloud computing. I specialize in building dynamic, high-performance software applications. I am constantly exploring innovative solutions in technology, and I thrive in collaborative environments.</p>
-                    <p>My interests span across software development, system architecture, and data-driven technologies, and I’m always eager to learn new tools and technologies. I aim to make an impact by solving problems with creativity and precision.</p>
+                    <p>I’m a passionate Software Developer with experience in virtualization and cloud computing. I
+                        specialize in building dynamic, high-performance software applications. I am constantly
+                        exploring innovative solutions in technology, and I thrive in collaborative environments.</p>
+                    <p>My interests span across software development, system architecture, and data-driven technologies,
+                        and I’m always eager to learn new tools and technologies. I aim to make an impact by solving
+                        problems with creativity and precision.</p>
                     <a href="#contact" class="btn">Let's Connect!</a>
                     <a href="index.html">Back to Top</a>
                 </div>
@@ -54,19 +60,19 @@
                         </div>
                     </div>
                     <div class="skill"></div>
-                        <span>C#</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%;"></div>
-                        </div>
+                    <span>C#</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
                     </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%;"></div>
-                        </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -80,16 +86,19 @@
                     <h3>Software Development</h3>
                     <p>Experienced in building front-end and back-end systems using Java, HTML, CSS, and Python.</p>
                 </div>
-                
+
                 <div class="skill-item">
                     <img src="./Image/cloud.webp" alt="Cloud Computing and Virtualization">
                     <h3>Cloud Computing and Virtualisation</h3>
-                    <p>Experience working with Microsoft Cloud solutions and Azure Web Services, including configuring virtual environments, networking, storage, and security in the cloud. Skilled in virtualisation concepts and cloud-based infrastructure management.</p>
+                    <p>Experience working with Microsoft Cloud solutions and Azure Web Services, including configuring
+                        virtual environments, networking, storage, and security in the cloud. Skilled in virtualisation
+                        concepts and cloud-based infrastructure management.</p>
                 </div>
                 <div class="skill-item">
                     <img src="./Image/problem.webp" alt="Problem Solving">
                     <h3>Problem Solving</h3>
-                    <p>Strong analytical skills, capable of finding effective solutions to complex problems using data-driven approaches.</p>
+                    <p>Strong analytical skills, capable of finding effective solutions to complex problems using
+                        data-driven approaches.</p>
                 </div>
             </div>
             <a href="index.html">Back to Top</a>
@@ -101,17 +110,18 @@
         <div class="container">
             <h2>Contact Me</h2>
             <p>If you'd like to collaborate or have any questions, feel free to get in touch!</p>
-            
+
             <!-- Social Media Links -->
             <div class="social-links">
                 <a href="mailto:alulundilanga@gmail.com" target="_blank" class="social-btn email">
                     <img src="./Image/mail.png" alt="LinkedIn Icon"> Email
-                <a href="https://www.linkedin.com/in/aluncedo-langa-2a0160200" target="_blank" class="social-btn linkedin">
-                    <img src="./Image/linkedin.jfif" alt="LinkedIn Icon"> LinkedIn
-                </a>
-                <a href="https://github.com/LundiLanga" target="_blank" class="social-btn github">
-                    <img src="./Image/GitH.png" alt="GitHub Icon"> GitHub
-                </a>
+                    <a href="https://www.linkedin.com/in/aluncedo-langa-2a0160200" target="_blank"
+                        class="social-btn linkedin">
+                        <img src="./Image/linkedin.jfif" alt="LinkedIn Icon"> LinkedIn
+                    </a>
+                    <a href="https://github.com/LundiLanga" target="_blank" class="social-btn github">
+                        <img src="./Image/GitH.png" alt="GitHub Icon"> GitHub
+                    </a>
             </div>
         </div>
     </section>
@@ -120,15 +130,17 @@
         💬
     </div>
 
-    <!-- Chatbot Window -->
-    <div id="chat-window">
+    <!-- Chat Window -->
+    <div id="chat-window" style="display: none;">
         <div class="chat-header">
             <h2>Let's Chat!</h2>
-            <button onclick="toggleChat()">✖</button>
         </div>
-        <div class="chat-body" id="messages"></div>
-        <input id="userInput" type="text" placeholder="Type a message..." />
-        <button id="sendBtn">Send</button>
+        <div class="chat-body" id="messages">
+        </div>
+        <div class="chat-input-container">
+            <input id="userInput" type="text" placeholder="Type a message..." />
+            <button id="sendBtn">Send</button>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -139,4 +151,5 @@
         </div>
     </footer>
 </body>
+
 </html>
