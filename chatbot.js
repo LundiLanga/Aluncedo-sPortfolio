@@ -1,3 +1,19 @@
+//contant variables for chat window(chat icon, and chat messages(chat body))
+function toggleChat() {
+    const chatWindow = document.getElementById("chat-window");
+    const chatMessages = document.getElementById("messages");
+
+    // Toggle chat window visibility
+    if (chatWindow.style.display === "none" || chatWindow.style.display === "") {
+        chatWindow.style.display = "flex"; // Open chat window
+    } else {
+        chatWindow.style.display = "none"; // Close chat window
+        chatMessages.innerHTML = ""; // Clear only the chat messages
+    }
+}
+
+
+
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('sendBtn');
