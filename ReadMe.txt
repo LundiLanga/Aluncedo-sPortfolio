@@ -36,6 +36,5 @@ Responsive design for mobile and desktop
 
 How To Run My Portfolio Website:
 
-1. - git clone https://github.com/LundiLanga/portfolio.git 
-   - cd portfolio
+1. - git clone https://github.com/LundiLanga/portfolio.github.io 
 2. Open the index.html in your browser
