@@ -185,7 +185,7 @@ h2 {
     color: #080808;
 }
 
-.btn {
+.sendBtn {
     display: inline-block;
     padding: 10px 30px;
     background-color: #844c8b;
@@ -439,6 +439,19 @@ h2 {
     word-wrap: break-word;
     text-align: right;
     border: 2px solid #6a3a6e;
+
+#sendBtn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: #844c8b;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+
 }
 
 /* Styling Bot Messages (Aligned Left) */
@@ -467,7 +480,6 @@ input[type="text"] {
     outline: none;
     box-sizing: border-box;
 }
-
 button#sendBtn {
     background-color: #411852;
     color: white;
@@ -475,10 +487,6 @@ button#sendBtn {
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-button#sendBtn:hover {
-    background-color: #652b70;
 }
 
 /* Footer */
@@ -490,14 +498,14 @@ button#sendBtn:hover {
     height: auto;
     margin-top: auto;
     position: relative;
-    min-height: 50px;
-  
+    min-height: 50px; 
 }
-
+  
 .footer p {
     margin: 0;
     padding: 20px;
 }
+  
 .footer a {
     display: inline-block;
     padding: 10px 30px;
