@@ -34,17 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
             respondToUser(userText.toLowerCase());
         }
     }
-
+    
     function addMessage(text, className) {
         const messageElement = document.createElement('div');
         messageElement.className = `message ${className}`;
         messageElement.textContent = text;
         messages.appendChild(messageElement);
         messages.scrollTop = messages.scrollHeight; // Auto-scroll
+    
     }
 
     function respondToUser(userText) {
         let botResponse;
+        
         switch (true) {
             case /hello|hi|hey/.test(userText):
                 botResponse = "Hello! How can I assist you today?";
@@ -61,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
             default:
                 botResponse = "Sorry, I didn't understand that. Could you please rephrase?";
         }
-        addMessage(botResponse, 'bot-message');
+        setTimeout(() => {
+         addMessage(botResponse, 'bot-message');  
+        },2000);
+        
     }
 });
