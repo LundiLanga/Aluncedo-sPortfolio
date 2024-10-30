@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             respondToUser(userText.toLowerCase());
         }
     }
-
+    
     function addMessage(text, className) {
         const messageElement = document.createElement('div');
         messageElement.className = `message ${className}`;

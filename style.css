@@ -408,15 +408,28 @@ h2 {
     overflow: hidden;
     z-index: 1000;
 }
-
 .chat-header {
     background-color: #7a4181;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    height: 10px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px; /* Adjust the vertical */
+}
+
+.chat-header h2{
+    background-color: #7a4181;
+    color: white;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    font-size: 20px;
+    margin: 0;            /* Remove default margins */
+    padding: 0;
+} 
 
 .chat-body {
     padding: 10px;
@@ -439,6 +452,7 @@ h2 {
     word-wrap: break-word;
     text-align: right;
     border: 2px solid #6a3a6e;
+}
 
 #sendBtn {
     display: flex;
