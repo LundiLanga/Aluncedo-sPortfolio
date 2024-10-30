@@ -12,8 +12,6 @@ function toggleChat() {
     }
 }
 
-
-
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('sendBtn');
@@ -36,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             respondToUser(userText.toLowerCase());
         }
     }
-    
+
     function addMessage(text, className) {
         const messageElement = document.createElement('div');
         messageElement.className = `message ${className}`;

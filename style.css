@@ -10,22 +10,27 @@
 /* Header Styles */
 .header {
     background-image: url(Image/pntree.jpg);
-    background-color: #1e1e1e; 
-    color: #ffffff; 
-    padding: 50px 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
     text-align: center;
     width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-
- 
+    background-repeat: no-repeat;
+    overflow: hidden; /* Prevents overflow on small screens */
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    text-align: center;
     
 }
 
@@ -35,12 +40,12 @@
 }
 
 .header .profile img {
-    width: 495px;
-    height: 495px;
+    width: 200px; /* Responsive width */
+    height: 200px;
     border-radius: 50%;
-    border: 5px solid #844c8b; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #844c8b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .header .profile img:hover {
@@ -53,29 +58,46 @@
 }
 
 .header h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-size: 2.5rem;
 }
 
 .header p {
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    color: #aaa; 
+    color: #aaa;
+}
+@media (max-width: 768px) {
+    .header {
+        height: 100vh; /* Ensure full height on small screens */
+    }
+
+    .header .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; 
-    margin-top: 30px;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px
 }
 
 nav ul li a {
     font-size: 1.1rem;
     color: #fff;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 20px;
@@ -119,6 +141,7 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 }
+
 
 /* Section Styling */
 section {
