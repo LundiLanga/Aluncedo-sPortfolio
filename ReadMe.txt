@@ -33,7 +33,6 @@ GitHub: LundiLanga
 Mobile-friendly layout with adaptive sections and components.
 Responsive design for mobile and desktop
 
-
 How To Run My Portfolio Website:
 
 1. - git clone https://github.com/LundiLanga/portfolio.github.io 
