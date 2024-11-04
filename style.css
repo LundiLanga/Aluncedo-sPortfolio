@@ -90,10 +90,9 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     float: center;
-    /* font-family: 'Roboto', sans-serif; */
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: px 20px;
+    padding: 10px 20px;
     border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -255,6 +254,17 @@ section {
     text-align: left;
     font-family: 'Roboto', sans-serif;
 }
+.about-text a{
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    float: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 .about-text p {
     margin-bottom: 20px;
@@ -351,7 +361,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-
 .skill-item {
     background-color: #fff;
     padding: 20px;
@@ -363,6 +372,10 @@ section {
 .skill-item img {
     width: 350px;
     margin-bottom: 20px;
+}
+
+.readMoreBtn {
+    background-color: #844c8b;
 }
 
 /* Contact Section */

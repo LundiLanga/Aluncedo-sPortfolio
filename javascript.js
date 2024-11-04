@@ -12,6 +12,19 @@ function toggleChat() {
     }
 }
 
+function toggleReadMore() {
+    const moreText = document.getElementById("moreText");
+    const readMoreBtn = document.getElementById("readMoreBtn");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        readMoreBtn.textContent = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        readMoreBtn.textContent = "Read More";
+    }
+}
+
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('sendBtn');
@@ -41,31 +54,32 @@ document.addEventListener('DOMContentLoaded', () => {
         messageElement.textContent = text;
         messages.appendChild(messageElement);
         messages.scrollTop = messages.scrollHeight; // Auto-scroll
-    
     }
 
     function respondToUser(userText) {
         let botResponse;
         
         switch (true) {
-            case /hello|hi|hey/.test(userText):
+            case /hello|hi|hey|good day/.test(userText):
                 botResponse = "Hello! How can I assist you today?";
                 break;
             case /portfolio|about you/.test(userText):
-                botResponse = "I’m Aluncedo Langa, a passionate software developer. Check out my skills and projects!";
+                botResponse = "I am a passionate software developer. I am constantly exploring innovative solutions in technology, and I thrive in collaborative environments. You can check out my skills and projects!";
                 break;
             case /cloud|virtualisation/.test(userText):
-                botResponse = "I have experience with Microsoft Azure, AWS, and virtualization solutions!";
+                botResponse = "I have experience with Microsoft Azure, AWS, and virtualization solutions. Experienced in building front-end and back-end systems using Java, HTML, CSS, and Python.";
                 break;
             case /contact/.test(userText):
                 botResponse = "You can reach me at alulundilanga@gmail.com or connect with me on LinkedIn.";
                 break;
+                case /location|located/.test(userText):
+                    botResponse = "I am currently located in Soweto.";
+                    break;
             default:
                 botResponse = "Sorry, I didn't understand that. Could you please rephrase?";
         }
         setTimeout(() => {
          addMessage(botResponse, 'bot-message');  
         },2000);
-        
     }
 });

@@ -8,7 +8,7 @@
     <title>Aluncedo | Software Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="chatbot.js"></script>
+    <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -91,9 +91,13 @@
                     <img src="./Image/cloud.webp" alt="Cloud Computing and Virtualization">
                     <h3>Cloud Computing and Virtualisation</h3>
                     <p>Experience working with Microsoft Cloud solutions and Azure Web Services, including configuring
-                        virtual environments, networking, storage, and security in the cloud. Skilled in virtualisation
-                        concepts and cloud-based infrastructure management.</p>
+                        virtual environments, networking, storage, and security in the cloud.</p>
+                    <div id="moreText" class="moreText" style="display: none;">
+                        <p>Skilled in virtualization concepts and cloud-based infrastructure management. I have hands-on experience in managing scalable cloud infrastructures and optimizing resources for better performance and security.</p>
+                    </div>
+                    <button onclick="toggleReadMore()" class="readMoreBtn" id="readMoreBtn">Read More</button>
                 </div>
+
                 <div class="skill-item">
                     <img src="./Image/problem.webp" alt="Problem Solving">
                     <h3>Problem Solving</h3>
@@ -103,6 +107,7 @@
             </div>
             <a href="index.html">Back to Top</a>
         </div>
+
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
