@@ -1,5 +1,7 @@
 /* General Reset */
 body {
+    height: 100;
+
     height: 100vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -26,6 +28,7 @@ body {
     background-repeat: no-repeat;
     overflow: hidden; /* Prevents overflow on small screens */
 }
+
 .header .container {
     display: flex;
     flex-direction: column;
@@ -70,7 +73,29 @@ body {
 .header p {
     font-size: 1.2rem;
     color: #aaa;
-    margin: 0;
+}
+@media (max-width: 768px) {
+    #chat-window {
+        display: block;
+    }
+    .header {
+        height: 100vh; /* Ensure full height on small screens */
+    }
+    .header .profile img {
+        width: 150px;
+        height: 150px;
+    }
+    p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
 
 nav ul {
@@ -104,6 +129,10 @@ nav ul li a:hover {
 }
 
 /* Responsive Design */
+
+@media (max-width: 480px) {
+    #chat-window {
+        display: block;
 
 @media (max-width: 1200px) {
     
@@ -211,26 +240,15 @@ nav ul li a:hover {
     }
 }
 
-
 /* Section Styling */
 section {
     padding: 60px 0;
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
-/* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    width: 100%;
-    
-} */
 
 h2 {
     font-size: 2.5rem;
@@ -269,9 +287,7 @@ h2 {
     text-decoration: none;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-
 }
-
 .about-text {
     flex: 1;
     max-width: 600px;
@@ -343,6 +359,21 @@ h2 {
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #844c8b; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chat-icon {
+        display: block;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-skills {
+        margin-top: 30px;
+    }
 }
 
 /* Skills Section */
@@ -458,7 +489,7 @@ h2 {
 }
 
 /* Position the chat icon at the bottom-right corner */
-#chat-icon {
+.chat-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
